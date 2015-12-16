@@ -2,8 +2,6 @@ package com.game.goose.cell;
 
 import java.awt.Color;
 import java.awt.Image;
-import java.util.List;
-
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
@@ -12,14 +10,16 @@ import com.game.goose.GameFrame;
 import com.game.goose.Player;
 
 public abstract class BaseCell extends JPanel implements Cell  {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private static final String IMAGE_FOLDER="./images/";
-	private static int numberPlayers;	//nombre de joueur(s)
 	private String name;
 	private int cellNumber;
 	private ImageIcon cellBackground;
 	private JLabelNumber contenu;
 	protected GameFrame gf;
-	private Color color;
 
 
 	public BaseCell(GameFrame gf){

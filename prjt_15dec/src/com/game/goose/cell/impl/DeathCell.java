@@ -7,6 +7,10 @@ import com.game.goose.cell.BaseCell;
 
 public class DeathCell extends BaseCell {
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
 	 * define a global variable who contain an image
 	 */
 	private static final String URl = "skull.jpg";
@@ -23,11 +27,11 @@ public class DeathCell extends BaseCell {
 	 */
 	public void performSpecificAction(){
 		if(gf.players.get(0).getPos() == 58){
-			JOptionPane.showMessageDialog(null,"Case de la MORT!"+"\n"+gf.getPlayers().get(0).getNickname()+" a marché sur la case de la MORT et doit repartir à 0 !");
+			JOptionPane.showMessageDialog(null,"Case de la MORT!"+"\n"+gf.getPlayers().get(0).getNickname()+" a marchï¿½ sur la case de la MORT et doit repartir ï¿½ 0 !");
 			gf.play(-58);
 			gf.repaint();
 		}else {
-			JOptionPane.showMessageDialog(null,"Case de la MORT!"+"\n"+gf.getPlayers().get(1).getNickname()+" a marché sur la case de la MORT et doit repartir à 0 !");
+			JOptionPane.showMessageDialog(null,"Case de la MORT!"+"\n"+gf.getPlayers().get(1).getNickname()+" a marchï¿½ sur la case de la MORT et doit repartir ï¿½ 0 !");
 			gf.play(-58);
 			gf.repaint();
 		}		

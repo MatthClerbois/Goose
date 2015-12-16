@@ -16,6 +16,7 @@ public class StartClass {
 			/**
 			 * create a new object MainFrame called frame
 			 */
+				@SuppressWarnings("unused")
 				MainFrame frame = new MainFrame();
 			}
 		});

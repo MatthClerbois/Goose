@@ -9,6 +9,10 @@ import com.game.goose.cell.BaseCell;
 
 public class EndCell extends BaseCell{
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
 	 * define a global variable who contain an image
 	 */
 	private static final String URL="lake.jpg";
@@ -27,11 +31,11 @@ public class EndCell extends BaseCell{
 	 */
 	public void performSpecificAction(){
 		if(gf.players.get(0).getPos() == 63){
-			JOptionPane.showMessageDialog(null,gf.getPlayers().get(0).getNickname()+" Arrive le premier au Lac ! " +"\nFélicitation, vous gagnez la partie");	
+			JOptionPane.showMessageDialog(null,gf.getPlayers().get(0).getNickname()+" Arrive le premier au Lac ! " +"\nFï¿½licitation, vous gagnez la partie");	
 			gf.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 			gf.dispose();
 		}else {
-			JOptionPane.showMessageDialog(null,gf.getPlayers().get(1).getNickname()+" Arrive le premier au Lac ! " +"\nFélicitation, vous gagnez la partie");
+			JOptionPane.showMessageDialog(null,gf.getPlayers().get(1).getNickname()+" Arrive le premier au Lac ! " +"\nFï¿½licitation, vous gagnez la partie");
 			gf.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 			gf.dispose();
 		}

@@ -7,6 +7,10 @@ import com.game.goose.cell.BaseCell;
 
 public class BridgeCell extends BaseCell{
 	/**
+	 * Constant serialized ID used for compatibility.
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
 	 * define a global variable who contain an image
 	 */
 	private static final String URL="bridge.png";
@@ -24,11 +28,11 @@ public class BridgeCell extends BaseCell{
 	 */
 	public void performSpecificAction(){
 			if(gf.players.get(0).getPos() == 6){
-				JOptionPane.showMessageDialog(null,gf.getPlayers().get(0).getNickname()+" Trouve un pont et décide de le traverser !"+"\n Par chance celui-ci l'amène à la case 12 ! ");
+				JOptionPane.showMessageDialog(null,gf.getPlayers().get(0).getNickname()+" Trouve un pont et dï¿½cide de le traverser !"+"\n Par chance celui-ci l'amï¿½ne ï¿½ la case 12 ! ");
 				gf.play(6);
 				gf.repaint();
 			}else {
-				JOptionPane.showMessageDialog(null,gf.getPlayers().get(1).getNickname()+"Trouve un pont et décide de le traverser !"+"\n Par chance celui-ci l'amène à la case 12 ! ");
+				JOptionPane.showMessageDialog(null,gf.getPlayers().get(1).getNickname()+"Trouve un pont et dï¿½cide de le traverser !"+"\n Par chance celui-ci l'amï¿½ne ï¿½ la case 12 ! ");
 				gf.play(6);
 				gf.repaint();
 			}

@@ -16,19 +16,20 @@ import com.game.goose.cell.impl.ThrowDiceCell;
 import com.game.goose.cell.impl.WellCell;
 
 public class Plateau {
+	@SuppressWarnings("unused")
 	private GameFrame gf ;
 	/**
 	 * ArrayList
 	 */
 	List<BaseCell> cells = new ArrayList<>();
+	
 	/**
 	 * plateau constructor receive GameFrame
 	 * @param gf
 	 */
-
 	public Plateau(GameFrame gf ){
 		this.gf = gf;
-		for (int i = 0; i <= 63; i++) {							//résolution 4 : 229.18
+		for (int i = 0; i <= 63; i++) {							//rï¿½solution 4 : 229.18
 			BaseCell cell=null;
 			
 			switch(i){
@@ -62,10 +63,7 @@ public class Plateau {
 				default:
 					cell = new BasicCell(gf);
 			}	
-			//cells.add(cell);
-//			cellNumber.setText(String.valueOf(i)); 		//affiche numéro de cellule
-			cell.setCellNumber(i);					//attribuer numéro de cellule			
-//			cell.isOnCell(gf.getPlayers());			//voir tp9 pg 35 !
+			cell.setCellNumber(i);					//attribuer numÃ©ro de cellule	
 			cells.add(cell);	
 		}
 	}
@@ -78,17 +76,6 @@ public class Plateau {
 		return cells.get(position);
 	}
 }
-
-// oie tt les 15
-//19,38 waitcell
-//58 deathCell
-//31 puits
-//42 goTo 30
-//52 jailCell
-//if player on other player Cell go to previousCell from other player
-//if dice=6 go to 12
-//if 9 by 6+3 go to 26
-//if 9 by 4+5 go to 53
 //http://www.regles-de-jeux.com/regle-du-jeu-de-l-oie/
 //http://www.recoveredscience.com/gooserules.htm
 

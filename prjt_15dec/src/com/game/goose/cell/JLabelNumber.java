@@ -8,8 +8,9 @@ import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-public class JLabelNumber extends JLabel { // définit le numéro de chaque case
-	private int number; // numéro de la case
+public class JLabelNumber extends JLabel { // dï¿½finit le numï¿½ro de chaque case
+	private static final long serialVersionUID = 1L;
+	private int number; // numï¿½ro de la case
 	private ImageIcon image;
 	private Color defaultColor = Color.BLACK;
 

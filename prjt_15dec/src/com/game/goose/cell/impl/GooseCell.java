@@ -6,6 +6,10 @@ import com.game.goose.cell.BaseCell;
 
 public class GooseCell extends BaseCell{
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
 	 * define a global variable who contain an image
 	 */
 	private static final String URL="goose.jpg";
@@ -25,12 +29,12 @@ public class GooseCell extends BaseCell{
 		
 		switch(gf.players.get(0).getPos()){
 			case 5: case 9: case 14: case 18: case 23: case 36: case 41: case 45: case 50: case 54: case 59:
-				JOptionPane.showMessageDialog(null,gf.getPlayers().get(0).getNickname()+" Tombe sur une oie, son jet de dé est doublé !! ");
+				JOptionPane.showMessageDialog(null,gf.getPlayers().get(0).getNickname()+" Tombe sur une oie, son jet de dï¿½ est doublï¿½ !! ");
 				gf.play(gf.getDe1()+gf.getDe2());
 				gf.repaint();
 				break;
 			default:
-				JOptionPane.showMessageDialog(null,gf.getPlayers().get(1).getNickname()+" Tombe sur une oie, son jet de dé est doublé !! ");
+				JOptionPane.showMessageDialog(null,gf.getPlayers().get(1).getNickname()+" Tombe sur une oie, son jet de dï¿½ est doublï¿½ !! ");
 				gf.play(gf.getDe1()+gf.getDe2());
 				gf.repaint();
 		}
